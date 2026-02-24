@@ -1,0 +1,28 @@
+/* Custom hero image style */
+.hero-media {
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Customize call-to-action buttons */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode overrides */
+body.dark {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+/* Responsive tweaks for mobile */
+@media (max-width: 768px) {
+  .hero-media {
+    max-width: 90%;
+  }
+}
