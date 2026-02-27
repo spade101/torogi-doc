@@ -197,21 +197,69 @@
 </section>
 
   <!-- Footer -->
-  <footer class="py-10 text-center bg-gray-800 text-gray-200">
-    <p>&copy; 2026 Torogi. All rights reserved.</p>
-    <p><a href="https://torogi.site" class="underline hover:text-white">www.torogi.site</a></p>
-    <button id="toggleDark" class="mt-4 px-4 py-2 bg-gray-600 rounded hover:bg-gray-500 transition">Toggle Dark/Light Mode</button>
-  </footer>
+  <footer class="py-12 bg-gray-900 text-gray-300">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Logo / Branding -->
+    <div class="mb-8 text-center">
+      <h3 class="text-2xl font-bold text-white">Torogi</h3>
+      <p class="text-gray-400">&copy; 2026 Torogi. All rights reserved.</p>
+    </div>
 
-  <script>
-    // Initialize AOS animations
-    AOS.init({ once: true });
+    <!-- Footer Links -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8 text-center sm:text-left">
+      
+      <!-- Company -->
+      <div>
+        <h4 class="font-semibold text-white mb-3">Company</h4>
+        <ul>
+          <li><a href="https://torogi.site" class="hover:text-white transition">About Us</a></li>
+          <li><a href="https://torogi.site" class="hover:text-white transition">Careers</a></li>
+          <li><a href="https://torogi.site" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
 
-    // Dark mode toggle
-    const toggle = document.getElementById('toggleDark');
-    toggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-    });
-  </script>
+      <!-- Policies -->
+      <div>
+        <h4 class="font-semibold text-white mb-3">Policies</h4>
+        <ul>
+          <li><a href="https://torogi.site" class="hover:text-white transition">Child Safety</a></li>
+          <li><a href="https://torogi.site" class="hover:text-white transition">Privacy Policy</a></li>
+          <li><a href="https://torogi.site" class="hover:text-white transition">Terms of Service</a></li>
+          <li><a href="https://torogi.site" class="hover:text-white transition">Account Deletion</a></li>
+        </ul>
+      </div>
+
+      <!-- Downloads -->
+      <div>
+        <h4 class="font-semibold text-white mb-3">Get the App</h4>
+        <div class="flex justify-center sm:justify-start gap-4 mt-2">
+          <a href="#" class="px-4 py-2 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500 transition">Google Play</a>
+          <a href="#" class="px-4 py-2 bg-white text-blue-700 rounded-lg hover:bg-gray-200 transition">App Store</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="text-center">
+      <button id="toggleDark" class="px-5 py-2 bg-gray-700 rounded hover:bg-gray-600 transition">
+        Toggle Dark/Light Mode
+      </button>
+    </div>
+    
+  </div>
+</footer>
+
+<script>
+  // Initialize AOS animations
+  AOS.init({ once: true });
+
+  // Dark mode toggle
+  const toggle = document.getElementById('toggleDark');
+  toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+</script>
 </body>
 </html>
