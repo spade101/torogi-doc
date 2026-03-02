@@ -32,6 +32,33 @@
 </head>
 <body class="bg-gray-50 text-gray-900 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100">
 
+  <!-- AppBar --><!-- Transparent AppBar -->
+  <header id="appBar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center h-16 justify-between">
+
+      <!-- Logo -->
+      <a href="#">
+        <img src="torogi-landing/images/TOROGI.webp" alt="Torogi Logo" class="h-10 w-auto">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex gap-6 text-white font-semibold">
+        <a href="#features" class="hover:text-yellow-400 transition">Blogs</a>
+        <a href="#jobs" class="hover:text-yellow-400 transition">Jobs</a>
+        <a href="#download" class="hover:text-yellow-400 transition">Events</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobileMenuButton" class="focus:outline-none">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
   <!-- Header / Hero -->
 <header class="relative text-center text-white min-h-screen flex items-center justify-center">
 
